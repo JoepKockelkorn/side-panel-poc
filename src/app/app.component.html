@@ -1,0 +1,23 @@
+<button mat-raised-button color="primary" (click)="openTemplate()">Open template</button>
+<button mat-raised-button color="primary" (click)="openComponent()">Open component</button>
+
+<ng-template cdkPortal #myTemplate="cdkPortal">
+  <app-side-panel-content>
+    <ng-container header>
+      <h1>Test!!</h1>
+    </ng-container>
+
+    <ng-container body>
+      <div style="height: 1000px;">As a template!</div>
+    </ng-container>
+
+    <ng-container footer>
+      <div class="buttons">
+        <button mat-button (click)="onClose()">Close</button>
+        <button mat-raised-button color="primary">Save</button>
+      </div>
+    </ng-container>
+  </app-side-panel-content>
+</ng-template>
+
+<router-outlet></router-outlet>

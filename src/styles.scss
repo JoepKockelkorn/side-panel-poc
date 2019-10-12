@@ -1,0 +1,27 @@
+@import '~@angular/cdk/overlay-prebuilt.css';
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+}
+
+.side-panel-backdrop {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.side-panel-container {
+  display: flex;
+  justify-content: flex-end;
+}

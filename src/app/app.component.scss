@@ -1,0 +1,13 @@
+:host {
+  padding: 2rem;
+  display: block;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+button + button {
+  margin-left: 1rem;
+}
